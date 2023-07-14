@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>carrito de compras</title>
 
@@ -20,13 +21,13 @@
     <script src="assets/js/main.js" type="module" defer></script>
   </head>
   <body>
-
-      <!--loader-->
+    <!--loader-->
     <div class="loader loader--hidden">
       <div class="loader__container">
         <span></span>
       </div>
     </div>
+
     <!--header-->
     <header class="header">
       <nav class="nav container">
@@ -44,8 +45,8 @@
         </a>
 
         <div class="nav__menu">
-          <button type="button" class="nav__btn btn--close">
-            <i class="bx bx-x"></i>
+          <button type="button">
+            <i class="bx bxs-x" class="nav__btn"></i>
           </button>
 
           <ul class="nav__list">
@@ -59,10 +60,8 @@
         </div>
 
         <div class="nav__buttons">
-
           <button type="button" class="nav__btn btn--cart">
             <i class="bx bxs-cart"></i>
-            <span class="notify">0</span>
           </button>
 
           <button type="button" class="nav__btn btn--menu">
@@ -79,7 +78,10 @@
         <div class="products__container container">
           <article class="product">
             <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Camiseta-negra" />
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png"
+                alt="Camiseta-negra"
+              />
             </div>
             <div class="product__content">
               <button type="button" class="product__btn add--to--cart">
@@ -87,12 +89,17 @@
               </button>
               <span class="product__price">$10</span>
               <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
             </div>
           </article>
           <article class="product">
             <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt2_av4jld.png" alt="Camiseta-negra" />
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt2_av4jld.png"
+                alt="Camiseta-negra"
+              />
             </div>
             <div class="product__content">
               <button type="button" class="product__btn add--to--cart">
@@ -100,27 +107,18 @@
               </button>
               <span class="product__price">$10</span>
               <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt3_wlm0h3.png" alt="Camiseta-negra" />
-            </div>
-            <div class="product__content">
-              <button type="button" class="product__btn add--to--cart">
-                <i class="bx bxs-cart-download"></i>
-              </button>
-              <span class="product__price">$10</span>
-              <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
             </div>
           </article>
 
           <article class="product">
             <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt4_cypl6n.png" alt="Camiseta-negra" />
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt3_wlm0h3.png"
+                alt="Camiseta-negra"
+              />
             </div>
             <div class="product__content">
               <button type="button" class="product__btn add--to--cart">
@@ -128,13 +126,18 @@
               </button>
               <span class="product__price">$10</span>
               <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
             </div>
           </article>
 
           <article class="product">
             <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt5_cnwq0w.png" alt="Camiseta-negra" />
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt4_cypl6n.png"
+                alt="Camiseta-negra"
+              />
             </div>
             <div class="product__content">
               <button type="button" class="product__btn add--to--cart">
@@ -142,13 +145,18 @@
               </button>
               <span class="product__price">$10</span>
               <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
             </div>
           </article>
 
           <article class="product">
             <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270465/eCommerce/shirt6_pnwws6.png" alt="Camiseta-negra" />
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt5_cnwq0w.png"
+                alt="Camiseta-negra"
+              />
             </div>
             <div class="product__content">
               <button type="button" class="product__btn add--to--cart">
@@ -156,13 +164,18 @@
               </button>
               <span class="product__price">$10</span>
               <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
             </div>
           </article>
 
           <article class="product">
             <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270450/eCommerce/shirt7_ofhlzd.png" alt="Camiseta-negra" />
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270465/eCommerce/shirt6_pnwws6.png"
+                alt="Camiseta-negra"
+              />
             </div>
             <div class="product__content">
               <button type="button" class="product__btn add--to--cart">
@@ -170,13 +183,18 @@
               </button>
               <span class="product__price">$10</span>
               <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
             </div>
           </article>
 
           <article class="product">
             <div class="product__image">
-              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270465/eCommerce/hoddie4_wvwaiv.png" alt="Camiseta-negra" />
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270450/eCommerce/shirt7_ofhlzd.png"
+                alt="Camiseta-negra"
+              />
             </div>
             <div class="product__content">
               <button type="button" class="product__btn add--to--cart">
@@ -184,61 +202,92 @@
               </button>
               <span class="product__price">$10</span>
               <span class="product__stock">disponibles: 3</span>
-              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__image">
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270465/eCommerce/hoddie4_wvwaiv.png"
+                alt="Camiseta-negra"
+              />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
             </div>
           </article>
         </div>
       </section>
     </main>
     <!--cart-->
-    <div clss="cart">
+    <div class="cart">
       <div class="cart__container">
         <div class="cart__header">
-          <h3 class="cart__title">carrito de compras</h3>
-          <button type="button" class="cart__btn btn--close">
+          <h3 class="cart__title">Carito de compras</h3>
+          <button type="button" class="cart__btn bnt--close">
             <i class="bx bx-x"></i>
           </button>
         </div>
         <div class="cart__body">
-           <!-- <div class="cart__empty">
-                <i class='bx bx-cart'></i>
-                <p class="cart__empty--text">No hay productos en el carrito</p>
-            </div> 
-        </div>-->
-        <article class="article">
-          <div class="aticle__image">
-            <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="preducts 1">
-          </div>
-          <div class="article__content">
-            <h3 class="article__title">Camiseta manga corta, cuello redondo</h3>
-            <span class="article__price">%10</span>
-            <div class="article__quantity">
-              <button type="button" class="article__quatity-btn  article--minus" >
-                <i class="bx bx-minus"></i>
-              </button>
-              <span class="article__quatity-text">1</span>
-              <button type="button" class="article__quatity-btn  article--plus" >
-                <i class="bx bx-plus"></i>
-              </button>
-            </div>
-            <button type="button" class="article__btn remove-from-cart">
-              <i class='bx bx-trash'></i>
-            </button>
-            
-          </div>
+          <!--<div class="cart__empty">
+            <i class="bx bx-cart"></i>
+            <p class="cart__empty--text">No hay productos en el carrito</p>
+          </div>-->
 
-
-        </article>
-        <div class="clsss__cart__footer">
-            <div class="cart__count">
-                <span class="cart__count--text">Articulos</span>
-                <span class="cart__count--item">0</span>
+          <article class="article">
+            <div class="article__image">
+              <img
+                src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt2_av4jld.png"
+                alt="products 1"
+              />
             </div>
-            <div class="cart__total">
-                <span class="cart__total--text">Total</span>
-                <span class="cart__total--itrem">$0</span>
+            <div class="article__content">
+              <h3 class="article__title">
+                Camiseta manga corta, cuello redondo
+              </h3>
+              <span class="article__price">$10</span>
+              <div class="article__quantity">
+                <button
+                  type="button"
+                  class="article__quantity-btn article--minus"
+                >
+                  <i class="bx bx-minus"></i>
+                </button>
+                <span class="article__quantity-text">1</span>
+                <button
+                  type="button"
+                  class="article__quantity-btn article--plus"
+                >
+                  <i class="bx bx-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="article__btn remove-from-cart">
+                <i class="bx bx-trash"></i>
+              </button>
             </div>
-            <button type="button" class="cart__btn--buy_">Comprar</button>
+          </article>
+        </div>
+        <div class="cart__footer">
+          <div class="cart__count">
+            <span class="cart__count--text">Articulos</span>
+            <span class="cart__count--item">0</span>
+          </div>
+          <div class="cart__total">
+            <span class="cart__total--text">Total</span>
+            <span class="cart__total--price">$0</span>
+          </div>
+          <button type="button" class="cart__btn bnt--buy">Comprar</button>
+        </div>
       </div>
     </div>
 

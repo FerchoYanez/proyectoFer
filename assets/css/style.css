@@ -6,9 +6,9 @@
   --text-color: hsl(0, 0%, 20%);
   --title-color: hsl(0, 0%, 10%);
   --bg-color: hsl(0, 0%, 100%);
-  --imgbg-color: hsl(0, 0%, 70%);
+  --card-color: hsl(0, 0%, 70%);
 
-  --body-font: "Belanosima", sans-serif;
+  --body-font: "open Sans", sans-serif;
   --title-font: "Poppins", sans-serif;
 
   --big-font: 2rem;
@@ -19,10 +19,12 @@
 
   --font-bold: 700;
   --font-medium: 600;
+  --font-normal: 400:
   --font-tiny: 300;
 
   --sp-0-5: 0.5rem;
   --sp-0-75: 0.75rem;
+  --sp-1: 1rem;
   --sp-1-5: 1.5rem;
   --sp-2: 2rem;
   --sp-2-5: 2.5rem;
@@ -34,10 +36,10 @@
 @media (min-width: 992px) {
   :root {
     --big-font: 2.5rem;
-    --medium-font: 2rem;
-    --normal-font: 1.25rem;
-    --small-font: 1rem;
-    --tiny-font: 0.8rem;
+  --medium-font: 2rem;
+  --normal-font: 1.25rem;
+  --small-font: 1rem;
+  --tiny-font: .8rem;
   }
 }
 html,
@@ -50,8 +52,8 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-*,
-*::before,
+*, 
+*::before, 
 *::after {
   box-sizing: inherit;
   margin: 0;
@@ -129,7 +131,7 @@ button {
   height: var(--sp-3);
   border-radius: 50%;
   background-color: var(--primary-color);
-  animation: pulsos 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: pulsos 3s cubic-bezier(0.77, 0, 0.175, 1) infinite ease-in-out;
 }
 
 .loader--hidden {
@@ -162,6 +164,7 @@ button {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: var(--header-height);
   background-color: var(--bg-color);
   z-index: var(--z-fixed);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
@@ -188,17 +191,17 @@ button {
 @media (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    bottom: -100%;
+    bottom: var(--header-height);
     background-color: var(--bg-color);
-    left: 0;
+    left: 100%;
     width: 100%;
     height: calc(max-content - var(--header-height));
     padding: var(--sp-3) 0 var(--sp-2);
     z-index: var(--z-fixed);
-    transition: bottom 0.3s ease-in-out;
+    transition: left .5s ease-in-out;
   }
 }
-.nav__menu .btn--close {
+.nav__menu .btn--closee {
   position: absolute;
   top: var(--sp-0-75);
   right: var(--sp-0-75);
@@ -390,7 +393,7 @@ button {
 .cart__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% -1% 20%;
+  grid-template-rows: 10% 70% 20%;
   height: 100%;
 }
 .cart__header {
@@ -398,7 +401,7 @@ button {
   grid-template-columns: 2fr 2fr 0.5fr;
   align-items: center;
   width: 100%;
-  padding: var(--sp-1-5) 0 0 var(--sp-1);
+  padding: var(--sp-0-75) 0 0 var(--sp-1);
 }
 .cart__title {
   grid-template-columns: span 2;
@@ -456,7 +459,7 @@ button {
   grid-column: span 4;
 }
 
-.article_quatity {
+.article__quatity {
   grid-column: span 2;
   display: flex;
   align-items: center;
@@ -491,8 +494,8 @@ button {
 }
 
 .btn--buy {
-  grid-column: sapn 4;
-  background-color: var(--title-font);
+  grid-column: span 4;
+  background-color: var(--title-color);
   color: var(--bg-color);
   padding: var(--sp-1);
 }
@@ -502,9 +505,8 @@ button {
     --header-heigth: 75px;
   }
 
-  .header {
-    top: 0;
-    bottom: unset;
+  .header{
+  top: 0;
   }
 }
 
