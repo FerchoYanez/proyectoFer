@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carrito de compras</title>
+
+    <link rel="icon" href="assets/css/icon.png" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" type="module" defer></script>
+  </head>
+  <body>
+
+      <!--loader-->
+    <div class="loader loader--hidden">
+      <div class="loader__container">
+        <span></span>
+      </div>
+    </div>
+    <!--header-->
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48.92 56.48"
+            class="logo--icon"
+          >
+            <path
+              fill="currentColor"
+              d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"
+            ></path>
+          </svg>
+        </a>
+
+        <div class="nav__menu">
+          <button type="button" class="nav__btn btn--close">
+            <i class="bx bx-x"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#" class="nav__link">inicio</a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">productos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__buttons">
+
+          <button type="button" class="nav__btn btn--cart">
+            <i class="bx bxs-cart"></i>
+            <span class="notify">0</span>
+          </button>
+
+          <button type="button" class="nav__btn btn--menu">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!--main-->
+    <main class="main">
+      <section class="products section">
+        <h2 class="products__title section--title">productos</h2>
+        <div class="products__container container">
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt2_av4jld.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt3_wlm0h3.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt4_cypl6n.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt5_cnwq0w.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270465/eCommerce/shirt6_pnwws6.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270450/eCommerce/shirt7_ofhlzd.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270465/eCommerce/hoddie4_wvwaiv.png" alt="Camiseta-negra" />
+            </div>
+            <div class="product__content">
+              <button type="button" class="product__btn add--to--cart">
+                <i class="bx bxs-cart-download"></i>
+              </button>
+              <span class="product__price">$10</span>
+              <span class="product__stock">disponibles: 3</span>
+              <h3 class="product__title">Camiseta manga corta, cuello redondo</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!--cart-->
+    <div clss="cart">
+      <div class="cart__container">
+        <div class="cart__header">
+          <h3 class="cart__title">carrito de compras</h3>
+          <button type="button" class="cart__btn btn--close">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <div class="cart__body">
+           <!-- <div class="cart__empty">
+                <i class='bx bx-cart'></i>
+                <p class="cart__empty--text">No hay productos en el carrito</p>
+            </div> 
+        </div>-->
+        <article class="article">
+          <div class="aticle__image">
+            <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="preducts 1">
+          </div>
+          <div class="article__content">
+            <h3 class="article__title">Camiseta manga corta, cuello redondo</h3>
+            <span class="article__price">%10</span>
+            <div class="article__quantity">
+              <button type="button" class="article__quatity-btn  article--minus" >
+                <i class="bx bx-minus"></i>
+              </button>
+              <span class="article__quatity-text">1</span>
+              <button type="button" class="article__quatity-btn  article--plus" >
+                <i class="bx bx-plus"></i>
+              </button>
+            </div>
+            <button type="button" class="article__btn remove-from-cart">
+              <i class='bx bx-trash'></i>
+            </button>
+            
+          </div>
+
+
+        </article>
+        <div class="clsss__cart__footer">
+            <div class="cart__count">
+                <span class="cart__count--text">Articulos</span>
+                <span class="cart__count--item">0</span>
+            </div>
+            <div class="cart__total">
+                <span class="cart__total--text">Total</span>
+                <span class="cart__total--itrem">$0</span>
+            </div>
+            <button type="button" class="cart__btn--buy_">Comprar</button>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer section">
+      <div class="footer__containe container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <h3 class="footer__title">sobre nosotros</h3>
+            <p class="footer__text">
+              La tienda de camisetas es un espacio vibrante y único, repleto de
+              diseños originales y mensajes inspiradores. El ambiente acogedor
+              invita a explorar una amplia variedad de estilos, desde lo retro
+              hasta lo contemporáneo. El amable personal está listo para ofrecer
+              asesoramiento personalizado y ayudarte a encontrar la camiseta
+              perfecta. Además de camisetas, también hay accesorios
+              complementarios disponibles. Es el lugar ideal para expresar tu
+              individualidad a través de la moda y descubrir prendas únicas.
+              Cada visita es una experiencia emocionante en busca de tu estilo
+              personal.
+            </p>
+          </div>
+          <div class="footer__right">
+            <h3 class="footer__title">redes sociales</h3>
+            <ul class="footer__social">
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <i class="bx bxl-netlify"></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <i class="bx bxs-institution"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer bottom"></div>
+        <p class="footer__text">Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
